@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 import { Fab } from '../components/Fab';
 
 const ContadorScreen = () => {
@@ -13,13 +13,6 @@ const ContadorScreen = () => {
 
             <Fab title="+1" onPress={() => setContador(contador + 1)} position="br" />
             <Fab title="-1" onPress={() => setContador(contador - 1)} position="bl" />
-            {/**
- <TouchableOpacity  style={styles.fabLocationBR}>
-                <View style={styles.fab}>
-                    <Text style={styles.fabText}>+1</Text>
-                </View>
-            </TouchableOpacity>
-         * **/}
         </View>
 
 
